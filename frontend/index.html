@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AstroTranscript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css?v=53" />
+</head>
+<body>
+  <div id="app"></div>
+  <input type="file" id="rec-file" accept=".wav,.WAV,.mp3,.m4a,.ogg,.flac,audio/wav,audio/mpeg,audio/*" multiple hidden />
+  <input type="file" id="speaker-file" accept=".wav,.WAV,.mp3,.m4a,.ogg,.flac,audio/wav,audio/mpeg,audio/*" multiple hidden />
+  <audio id="player-orig" preload="auto"></audio>
+  <audio id="player-clean" preload="auto"></audio>
+  <div id="mini-player" class="mini-player" hidden>
+    <button type="button" id="mini-play" class="go" aria-label="Играть">▶</button>
+    <div class="mini-meta">
+      <div id="mini-name" class="mini-name"></div>
+      <div id="mini-file" class="mini-file mono"></div>
+    </div>
+    <label class="mini-rate">Скорость
+      <select id="mini-rate" aria-label="Скорость">
+        <option value="0.5">0.5×</option>
+        <option value="0.75">0.75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.25">1.25×</option>
+        <option value="1.5">1.5×</option>
+        <option value="1.75">1.75×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+    <label class="mini-vol">Громкость
+      <input id="mini-vol" type="range" min="0" max="100" value="100" aria-label="Громкость" />
+    </label>
+    <a id="mini-open" class="icon-btn" href="#/">К записи</a>
+  </div>
+  <script src="/assets/adapt-filter.js?v=51"></script>
+  <script src="/assets/app.js?v=54"></script>
+</body>
+</html>
