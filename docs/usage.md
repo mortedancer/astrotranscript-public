@@ -1,6 +1,6 @@
 # Using AstroTranscript
 
-The app runs in a browser at http://127.0.0.1:8787 after you start the server. See the [README](../README.md) for install and data-root setup.
+The app runs in a browser at http://127.0.0.1:8787 after you start the server. On Windows, `astro.cmd install` sets up the virtual environment and `astro.cmd start` runs the server in the background. `astro.cmd status`, `stop`, `restart`, `logs`, and `open` manage that process. See the [README](../README.md) for install and data-root setup.
 
 ## Projects and recordings
 

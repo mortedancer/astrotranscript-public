@@ -29,7 +29,13 @@ The interface is mostly Russian.
 
 ## Install
 
-From this directory:
+On Windows, from this directory:
+
+```bat
+astro.cmd install
+```
+
+That creates `.venv` and installs `backend\requirements.txt`. The same steps by hand:
 
 ```bat
 python -m venv .venv
@@ -41,7 +47,26 @@ On macOS or Linux, activate the virtual environment with `source .venv/bin/activ
 
 ## Run
 
-`start.bat` on Windows uses the `data` folder in this directory when `ASTRO_DATA_ROOT` is not already set.
+On Windows, `astro.cmd` starts the server in the background and can stop it, restart it, and show whether it is healthy:
+
+```bat
+astro.cmd start
+astro.cmd status
+astro.cmd stop
+astro.cmd restart
+astro.cmd logs
+astro.cmd open
+astro.cmd console
+```
+
+`astro.cmd console` runs in the current window, the same way `start.bat` does. `start.bat` uses the `data` folder in this directory when `ASTRO_DATA_ROOT` is not already set.
+
+To pin Python or the data folder on one machine, create `astro.local.ps1` next to the script. That file is gitignored.
+
+```powershell
+$AstroPython = "C:\Path\python.exe"
+$AstroDataRoot = "D:\recordings"
+```
 
 ```bat
 start.bat

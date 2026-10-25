@@ -20,3 +20,5 @@ data/
 *.m4a
 log.txt
 .playwright-mcp/
+.astro/
+astro.local.ps1
