@@ -20,6 +20,12 @@ The server stores audio and transcripts on your machine. Nothing is uploaded by 
 
 The interface is mostly Russian.
 
+## Interface
+
+![Short tour: projects, a recording, the timeline, listening effects, and the mini player](docs/images/guide.gif)
+
+The tour above is the real interface with a synthetic recording, `2026.01.15.093000`. Annotated stills of each screen are in [docs/guide.md](docs/guide.md).
+
 ## Requirements
 
 - Python 3.10 or newer

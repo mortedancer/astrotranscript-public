@@ -2,6 +2,8 @@
 
 The app runs in a browser at http://127.0.0.1:8787 after you start the server. On Windows, `astro.cmd install` sets up the virtual environment and `astro.cmd start` runs the server in the background. `astro.cmd status`, `stop`, `restart`, `logs`, and `open` manage that process. See the [README](../README.md) for install and data-root setup.
 
+Annotated pictures of these screens, and a short animated tour, are in the [interface guide](guide.md).
+
 ## Projects and recordings
 
 The dashboard lists projects. Inbox is created automatically and holds recordings that are not in another project.
